@@ -16,7 +16,7 @@
 
         if( $banner_id ) { ?>
             <a href="<?php echo esc_url( dokan_get_store_url( $author->ID ) ); ?>">
-                <?php echo esc_html( $banner_url ); ?>
+                <?php echo __( $banner_url ); ?>
             </a>
         <?php } else { ?>
             <a href="<?php echo esc_url( dokan_get_store_url( $author->ID ) ); ?>">
