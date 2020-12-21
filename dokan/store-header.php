@@ -89,14 +89,14 @@ if ( 'layout3' === $profile_layout ) {
 
                         <div class="store-info-column">
                             <ul class="store-meta-info">
-		                        <?php if ( ! empty( $store_address ) ) { ?>
+		                        <?php if ( ! dokan_is_vendor_info_hidden( 'address' ) && isset( $store_address ) && !empty( $store_address ) ) { ?>
                                     <li>
                                         <i class="fa fa-map-marker"></i>
 				                        <?php echo wp_kses_post( $store_address ); ?>
                                     </li>
 		                        <?php } ?>
 
-		                        <?php if ( ! empty( $phone ) ) { ?>
+		                        <?php if ( ! dokan_is_vendor_info_hidden( 'phone' ) && ! empty( $store_user->get_phone() ) ) { ?>
                                     <li>
                                         <a href="tel:<?php echo esc_attr( $phone ); ?>">
                                             <i class="fa fa-phone"></i>
@@ -106,7 +106,7 @@ if ( 'layout3' === $profile_layout ) {
 		                        <?php } ?>
 
 
-		                        <?php if ( ! empty( $email ) ) { ?>
+		                        <?php if ( ! dokan_is_vendor_info_hidden( 'email' ) && $store_user->show_email() == 'yes' ) { ?>
                                     <li>
                                         <a href="mailto:<?php echo esc_attr( $email ); ?>">
                                             <i class="fa fa-envelope"></i>
