@@ -50,7 +50,7 @@ if ( ! function_exists( 'dokani_navigation_position' ) ) {
                         )
                     );
 
-	                if ( has_nav_menu( 'responsive_menu' ) ) {
+	                if ( has_nav_menu( 'responsive' ) ) {
 		                wp_nav_menu(
 			                array(
 				                'theme_location'  => 'responsive',
