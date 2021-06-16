@@ -19,7 +19,7 @@ get_header(); ?>
 
     <div class="grid-container">
 
-        <div id="primary" <?php dokani_content_class(); ?>>
+        <div id="primary" <?php dokani_content_class( 'dokan-single-store' ); ?>>
 
             <main id="main" <?php dokani_main_class(); ?>>
 
