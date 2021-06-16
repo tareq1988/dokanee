@@ -480,7 +480,7 @@
 }
 @media only screen and (max-width: 767px) {
   #dokane-menu-cart-wrapper .dropdown-menu {
-    left: -140px;
+    left: 0;
   }
 }
 #dokane-menu-cart-wrapper .dropdown-menu li {
@@ -986,7 +986,6 @@ ul.responsive-user-menu {
   margin-left: 0;
   position: absolute;
   top: 2px;
-  right: 60px;
   display: block;
 }
 @media (min-width: 769px) {
@@ -1443,7 +1442,7 @@ ul.responsive-user-menu li .dropdown-menu li a i.pull-right {
   padding-left: 20px;
 }
 .main-navigation #primary-menu + .widget {
-  margin: 30px 0;
+  margin: 60px 0 10px;
   float: none;
   max-width: 100%;
 }

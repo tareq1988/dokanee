@@ -53,7 +53,7 @@ if ( ! function_exists( 'dokani_navigation_position' ) ) {
 	                if ( has_nav_menu( 'responsive_menu' ) ) {
 		                wp_nav_menu(
 			                array(
-				                'theme_location'  => 'responsive',
+				                'theme_location'  => 'responsive_menu',
 				                'container'       => 'div',
 				                'container_class' => 'main-nav',
 				                'container_id'    => 'responsive-menu',
