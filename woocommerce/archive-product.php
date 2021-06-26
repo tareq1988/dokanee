@@ -40,6 +40,7 @@ get_header(); ?>
     </header>
 
     <?php
+    if ( woocommerce_product_loop() ) {
     /**
      * woocommerce_before_shop_loop hook
      *
@@ -48,7 +49,6 @@ get_header(); ?>
      */
     do_action( 'woocommerce_before_shop_loop' );
 
-    if ( woocommerce_product_loop() ) {
         ?>
 
         <?php
